@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi audio player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="topu-player">
+        <div class="topu-player__wrapper">
+            <div class="audio-player__thumb-area">
+                <img class="audio-player__thumb thumb-cover" src="" alt="">
+            </div>
+            <div class="audio-player__track">
+                <!-- audio info  -->
+                <span class="track-name">Horror Special</span>
+                <span class="playlist-name">Episode 09</span>
+                <span class="album-name"> bla bla bla</span>
+                <span class="singer-name">RJ Jenny Wilson</span>
+            </div>
+            <div class="audio-player__progress">
+                <!-- progress bar  -->
+                <div class="audio-player__progress__bar progress-bar">
+                    <div class="audio-player__progress__bar__fill bar-fill"></div>
+                </div>
+                <!-- progress time  -->
+                <div class="audio-player__progress__time">
+                    <span class="audio-player__progress__time__current current-time">00:00</span>
+                    <span class="audio-player__progress__time__duration duration-time">00:00</span>
+                </div>
+            </div>
+
+            <div class="audio-player__audio">
+                <!-- audio player  -->
+                <audio class="audio-panel" src="" hidden></audio>
+            </div>
+
+            <div class="audio-player__controls">
+                <!-- audio controller  -->
+                <button class="audio-player__controls__reset reset-audio">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </button>
+                <button class="audio-player__controls__prev prev-audio">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+                <button class="audio-player__controls__backward backward-audio">
+                    <i class="fa-solid fa-backward-fast"></i>
+                </button>
+                <button class="audio-player__controls__playPause playPause-audio ">
+                    <span class="play show">
+                        <i class="fa-solid fa-play"></i>
+                    </span>
+                    <span class="pause hide">
+                        <i class="fa-solid fa-pause"></i>
+                    </span>
+                </button>
+                <button class="audio-player__controls__forward forward-audio">
+                    <i class="fa-solid fa-forward-fast"></i>
+                </button>
+                <button class="audio-player__controls__next next-audio">
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+            </div>
+            <div class="audio-player__volume">
+                <div class="audio-player__volume__icon toggle-volume">
+                    <span class="show">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </span>
+                    <span class="hide">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </span>
+                </div>
+                <div class="audio-player__volume__bar volume-control">
+                    <div class="audio-player__volume__bar__fill"></div>
+                </div>
+            </div>
+            <div class="audio-player__setting">
+                <button class="audio-player__setting__button audio-setting">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <button class="audio-player__setting__close audio-setting-close">x</button>
+                <div class="audio-player__setting__items">
+                    <!-- <button class="audio-player__setting__speed">
+                <i class="fa-solid fa-wind"></i>
+            </button> -->
+                    <button class="audio-player__setting__add-to-playlist add-playlist"> <i
+                            class="fa-solid fa-file-audio"></i>
+                        add to playlist</button>
+                    <button class="audio-player__setting__report report-audio">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Report
+                    </button>
+                    <button class="audio-player__setting__share share-audio">
+                        <i class="fa-solid fa-reply-all"></i>
+                        Share
+                    </button>
+                </div>
+            </div>
+
+            <div class="audio-player__equlizer">
+                <div class="audio-player__equlizer__bar">
+                    <div class="audio-player__equlizer__bar__fill"></div>
+                </div>
+            </div>
+            <!-- <div class="audio-player__playlist"></div> -->
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
